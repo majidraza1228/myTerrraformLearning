@@ -139,6 +139,6 @@ resource "aws_instance" "web_server" {                            # BLOCK
   instance_type = "t2.micro"                                      # Argument
   subnet_id     = aws_subnet.public_subnets["public_subnet_1"].id # Argument with value as expression
   tags = {
-    Name = "SyedMajidRaza - Web EC2 Server"
+    Name = "Web EC2 Server"
   }
 }
