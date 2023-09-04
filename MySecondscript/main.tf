@@ -373,7 +373,7 @@ module "autoscaling" {
   instance_type = "t3.micro"
 
   tags_as_map = {
-    Name = "Web EC2 Server 2"
+    Name = "Moduel - Web EC2 Server 2"
   }
 
 }
