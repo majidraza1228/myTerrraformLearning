@@ -1,4 +1,11 @@
 terraform {
+  backend "remote" {
+    hostname     = "app.terraform.io"
+    organization = "learning_raza"
+    workspaces {
+      name = "test_workspace"
+    }
+  }
   required_version = ">= 1.0.0"
   required_providers {
     aws = {
